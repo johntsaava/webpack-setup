@@ -1,14 +1,14 @@
-const path = require("path");
-
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const mode = process.env.NODE_ENV || "development";
 
 module.exports = {
   mode,
-  entry: "./src/index.js",
-  output: {
-    filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
-  },
+  plugins: [
+    new BundleAnalyzerPlugin({
+      analyzerMode: process.env.STATS || "disabled",
+    }),
+  ],
   module: {
     rules: [
       {
