@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "webpack --watch --mode=development",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "core-js": "^3.19.1",
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "nodemon-webpack-plugin": "^4.6.0",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}
